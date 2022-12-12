@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.container-careta {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  margin-top: 2rem;
+  padding:3rem;
+  justify-content: space-between
+}
