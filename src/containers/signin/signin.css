@@ -1,0 +1,11 @@
+.MuiButton-contained{
+    background-color: var(--orange) !important;
+    padding: 1.3rem !important;
+    border-radius: 2rem !important;
+    font-size: 1rem !important;
+  }
+
+.MuiButton-text {
+    color: var(--orange) !important;
+    font-size: 1rem !important;
+}
