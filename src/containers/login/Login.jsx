@@ -18,7 +18,7 @@ export default function Login() {
         <TextField id="standard-basic" label="Contrasena" variant="outlined" onChange={e => setCredentials({...credentials, password: e.target.value})}/>
       </div>
         <div className='btn-wrapper'>
-          <Button variant="contained" onClick={() => login(credentials)}>Iniciar sesion</Button>
+          <Button variant="contained" onClick={() => login(credentials)} disabled={!credentials.password || !credentials.username}>Iniciar sesion</Button>
           <Button variant="text" onClick={() => navigate('/signin')}>Registrarse</Button>
         </div>
     </div>
