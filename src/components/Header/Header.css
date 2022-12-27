@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+.header-wrapper {
+    background-color: var(--turquoise);
+    color: #ffffff;
+    min-height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+}

@@ -1,0 +1,36 @@
+
+.container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    margin-top: 2rem;
+    padding:3rem;
+    justify-content: space-between
+  }
+
+  .MuiButton-contained{
+    background-color: var(--orange) !important;
+    padding: 1.3rem !important;
+    border-radius: 2rem !important;
+    font-size: 1rem !important;
+  }
+
+  .MuiButton-text {
+    color: var(--orange) !important;
+    font-size: 1rem !important;
+  }
+  
+  .btn-wrapper, .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  .input-wrapper {
+    justify-content: space-around;
+  }
+
+  .btn-wrapper {
+    justify-content: space-evenly;
+  }

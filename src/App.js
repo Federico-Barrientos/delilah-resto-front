@@ -1,19 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import Button  from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from './containers/login/Login'
+import SignIn from './containers/signin/SignIn'
+import Layout from './components/Layout/Layout'
+import Home from './containers/home/Home'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div className='container-careta'>
-          <TextField id="standard-basic" label="Anda pa'lla" variant="standard"/>
-          <Button variant="contained">Bobo</Button>
-        </div>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route exact path="/" element={<Home/>}></Route>
+            <Route exact path="/login" element={<Login/>}></Route>
+            <Route exact path="/signin" element={<SignIn/>}></Route>
+          </Routes>
+        </Layout>
+      </BrowserRouter>
   );
 }
 
